@@ -2,7 +2,7 @@
 layout: post
 title: Intellij Idea Debug使用略述(Mac)
 categories: [Intellij Idea,mac]
-tags: Intellij\ Idea mac
+tags: Idea mac
 ---
 
 * content

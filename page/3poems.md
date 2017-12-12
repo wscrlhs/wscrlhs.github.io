@@ -9,7 +9,6 @@ type: page
 * content
 {:toc}
 
-[离骚](/assets/poems/2017-05-11-离骚.md)
 
 ## 送杜少府之任蜀州
 

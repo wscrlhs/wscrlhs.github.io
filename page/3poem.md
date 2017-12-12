@@ -1,0 +1,19 @@
+---
+layout: page
+title:  poem
+permalink: /poem/
+icon: bookmark
+type: page
+---
+
+* content
+{:toc}
+
+## 送杜少府之任蜀州
+唐 王勃
+城阙辅三秦，风烟望五津。
+海内存知己，天涯若比邻
+海内存知己，天涯若比邻
+与君离别意，同是宦游人。
+海内存知己，天涯若比邻。
+无为在歧路，儿女共沾巾。

@@ -21,48 +21,55 @@ Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发�
 
 ## 安装
 ### Linux下安装memcached
->* 首先要先安装libevent库
-`yum install libevent libevent-deve`        自动下载安装（Redhat/Fedora/Centos）
+* 首先要先安装libevent库
+
+​       `yum install libevent libevent-deve`        自动下载安装（Redhat/Fedora/Centos）
+
 * 自动安装
-`yum install memcached`
+  `yum install memcached`
 * memcached启动
-`service memcached start`
+  `service memcached start`
 * memcached 停止
-`service memcached stop`
+  `service memcached stop`
 
-### memcached连接
-**telnet HOST PORT**
+### Memcached连接
+> **telnet HOST PORT**
 
-`telnet 127.0.0.1 11211`
+​      `telnet 127.0.0.1 11211`
 
-## memcached 使用
+## Memcached 使用
 ### 存储命令
+
+#### set命令
+
 **语法：**
->set 命令的基本语法格式如下：
+> set 命令的基本语法格式如下：
+
 ```
 set key flags exptime bytes [noreply]
 value
 ```
 **参数说明如下：**
-* key：键值 key-value 结构中的 key，用于查找缓存值。
-* flags：可以包括键值对的整型参数，客户机使用它存储关于键值对的额外信息 。
-* exptime：在缓存中保存键值对的时间长度（以秒为单位，0 表示永远）
-* bytes：在缓存中存储的字节数
-* noreply（可选）： 该参数告知服务器不需要返回数据
-* value：存储的值（始终位于第二行）（可直接理解为key-value结构中的value）
+- **key**：键值 key-value 结构中的 key，用于查找缓存值。
+- **flags**：可以包括键值对的整型参数，客户机使用它存储关于键值对的额外信息 。
+- **exptime**：在缓存中保存键值对的时间长度（以秒为单位，0 表示永远）
+- **bytes**：在缓存中存储的字节数
+- **noreply（可选）**： 该参数告知服务器不需要返回数据
+- **value**：存储的值（始终位于第二行）（可直接理解为key-value结构中的value）
 
-** 实例**
->以下实例中我们设置：
+**实例**
 
->key → runoob
+以下实例中我们设置：
 
->flag → 0
+key → runoob
 
->exptime → 900 (以秒为单位)
+flag → 0
 
->bytes → 9 (数据存储的字节数)
+exptime → 900 (以秒为单位)
 
->value → memcached
+bytes → 9 (数据存储的字节数)
+
+value → memcached
 
 ```
 set runoob 0 900 9
@@ -75,12 +82,64 @@ memcached
 
 END
 ```
-输出
+**输出**
 如果数据设置成功，则输出：
-STORED
+```
+STORED                                          `
+```
 输出信息说明：
-STORED：保存成功后输出。
-ERROR：在保持失败后输出。
+- STORED：保存成功后输出。
+- ERROR：在保持失败后输出。
 
+#### add命令
 
+**语法：**
 
+add 命令的基本语法格式如下：
+
+```
+add key flags exptime bytes [noreply]
+value
+```
+
+参数说明如下：
+
+- **key：**键值 key-value 结构中的 key，用于查找缓存值。
+- **flags**：可以包括键值对的整型参数，客户机使用它存储关于键值对的额外信息 。
+- **exptime**：在缓存中保存键值对的时间长度（以秒为单位，0 表示永远）
+- **bytes**：在缓存中存储的字节数
+- **noreply（可选）**： 该参数告知服务器不需要返回数据
+- **value**：存储的值（始终位于第二行）（可直接理解为key-value结构中的value）
+
+**实例**
+
+以下实例中我们设置：
+
+- key → new_key
+- flag → 0
+- exptime → 900 (以秒为单位)
+- bytes → 10 (数据存储的字节数)
+- value → data_value
+
+```
+add new_key 0 900 10
+data_value
+STORED
+get new_key
+VALUE new_key 0 10
+data_value
+END
+```
+
+**输出**
+
+如果数据添加成功，则输出：
+
+```
+STORED
+```
+
+输出信息说明：
+
+- **STORED**：保存成功后输出。
+- **NOT_STORED **：在保持失败后输出。

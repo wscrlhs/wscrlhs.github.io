@@ -8,7 +8,7 @@ tags: memcached
 * content
 {:toc}
 
-## Memcached简介
+# Memcached简介
 Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。
 
 Memcached是一种基于内存的key-value存储，用来存储小块的任意数据（字符串、对象）。这些数据可以是数据库调用、API调用或者是页面渲染的结果。
@@ -23,8 +23,8 @@ Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发�
 
 
 
-## 安装
-### Linux下安装memcached
+# 安装
+## Linux下安装memcached
 * 首先要先安装libevent库
 ​       `yum install libevent libevent-deve`        自动下载安装（Redhat/Fedora/Centos）
 
@@ -35,14 +35,14 @@ Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发�
 * memcached 停止
   `service memcached stop`
 
-### Memcached连接
+## Memcached连接
 > **telnet HOST PORT**
 
 ​      `telnet 127.0.0.1 11211`
 
-## Memcached 使用
-### 存储命令
-#### set命令
+# Memcached 使用
+## 存储命令
+### set命令
 
 **语法：**
 > set 命令的基本语法格式如下：
@@ -93,7 +93,7 @@ STORED                                          `
 - STORED：保存成功后输出。
 - ERROR：在保持失败后输出。
 
-#### add命令
+### add命令
 
 **语法：**
 

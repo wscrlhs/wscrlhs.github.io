@@ -19,10 +19,13 @@ Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发�
 
 一般的使用目的是，通过缓存数据库查询结果，减少数据库访问次数，以提高动态Web应用的速度、提高可扩展性。
 
+
+
+
+
 ## 安装
 ### Linux下安装memcached
 * 首先要先安装libevent库
-
 ​       `yum install libevent libevent-deve`        自动下载安装（Redhat/Fedora/Centos）
 
 * 自动安装
@@ -39,7 +42,6 @@ Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发�
 
 ## Memcached 使用
 ### 存储命令
-
 #### set命令
 
 **语法：**

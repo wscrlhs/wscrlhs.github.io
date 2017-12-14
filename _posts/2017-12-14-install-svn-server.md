@@ -54,3 +54,11 @@ ealm =  /data/svn/repositories //认证空间名，版本库所在目录
 svnserve -d -r /data/svn/repositories/      //启动svn，注意目录，不包括mysvn
 ps aux | grep svnserve      //查看启动情况
 ```
+## 遇到的问题
+1. 在阿里云安装svn，客户端无法访问
+
+    svn默认使用端口3690
+
+    登录阿里云控制服务台，访问云服务器ECS-->本服务器-->实例-->管理-->本实例安全组->配置规则，添加安全组策略。
+
+    ![安全组策略](/assets/images/201712140001.png)

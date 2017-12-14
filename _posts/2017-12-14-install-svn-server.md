@@ -23,6 +23,9 @@ mkdir -p /data/svn/repositories/mysvn
 svnadmin create /data/svn/repositories/mysvn/
 ```
 
+
+
+
 ## svn配置
 
 - 创建用户
@@ -63,4 +66,4 @@ ps aux | grep svnserve      //查看启动情况
 
     ​
 
-    ![](http://ww1.sinaimg.cn/large/73f02bfcgy1fmgmd1us34j20yk0380t2.jpg))
+    ![](http://ww1.sinaimg.cn/large/73f02bfcgy1fmgmd1us34j20yk0380t2.jpg)

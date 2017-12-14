@@ -1,0 +1,56 @@
+---
+layout: post
+title: 在Centos6.8环境下搭建svn服务器
+categories: svn
+tags: svn
+---
+
+* content
+{:toc}
+
+
+## 安装svn
+```
+yum -y install subversion
+```
+## 创建svn仓库目录
+```
+mkdir -p /data/svn/repositories/mysvn
+```
+
+## 创建svn版本库
+```
+svnadmin create /data/svn/repositories/mysvn/
+```
+
+## svn配置
+
+- 创建用户
+```
+vim /data/svn/repositories/mysvn/conf/passwd
+#在里面增加用户，格式为：用户名 = 密码
+```
+- 设置权限
+```
+vim /data/svn/repositories/mysvn/conf/authz
+#在里面增加权限   格式为：用户名 = rw (r:表示读，w:表示写),如
+[mysvn:/]
+yubb = rw
+#mysvn为开始创建的版本库
+```
+- 修改svnserve.conf文件
+```
+vim /data/svn/repositories/mysvn/conf/svnserve.conf
+#以下代码取消注释
+anon-access = read //匿名用户可读
+auth-access = write //授权用户可写
+password-db = passwd //使用哪个文件作为账号文件
+authz-db = authz //使用哪个文件作为权限文件
+ealm =  /data/svn/repositories //认证空间名，版本库所在目录
+```
+
+## 启动svn服务
+```
+svnserve -d -r /data/svn/repositories/      //启动svn，注意目录，不包括mysvn
+ps aux | grep svnserve      //查看启动情况
+```

@@ -43,7 +43,7 @@ File->Default Settings->Languages & Frameworks->PHP->Test Frameworks,点击+添�
 
 src/Email.php
 
-```
+```php
 <?php
 
 
@@ -85,7 +85,7 @@ final class Email
 
 tests/EmailTest.php
 
-```
+```php
 <?php
 
 
@@ -123,7 +123,7 @@ final class EmailTest extends TestCase
 
 - Test Execution
 
-```
+```php
 ➜ phpunit --bootstrap src/Email.php tests/EmailTest
 PHPUnit 6.5.0 by Sebastian Bergmann and contributors.
 

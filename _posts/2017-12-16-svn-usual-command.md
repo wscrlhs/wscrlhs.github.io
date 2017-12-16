@@ -9,7 +9,7 @@ categories:  svn
 * content
 {:toc}
 
-
+## 常用命令
 ###  将文件checkout到本地目录
 ```
   svn checkout path（path是服务器上的目录）
@@ -22,6 +22,10 @@ categories:  svn
   例如：svn add test.php(添加test.php)
   svn add *.php(添加当前目录下所有的php文件)
 ```
+
+
+
+
 ###  将改动的文件提交到版本库
 ```
   svn commit -m "LogMessage" [-N] [--no-unlock] PATH(如果选择了保持锁，就使用--no-unlock开关)

@@ -133,4 +133,8 @@ categories:  svn
   svn cat -r PREV filename > filename (PREV 是上一版本,也可以写具体版本号,这样输出结果是可以提交的)
   ```
 ## svn常用命令一栏变
+
+## 参考资料
 [svn常用命令一栏变](http://blog.sina.com.cn/s/blog_567e650201012jmq.html)
+[Subversion Commands and Scripts](http://www.yolinux.com/TUTORIALS/Subversion.html)
+

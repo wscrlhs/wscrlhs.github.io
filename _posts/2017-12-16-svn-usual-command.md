@@ -137,9 +137,7 @@ categories:  svn
   svn cat -r PREV filename > filename (PREV 是上一版本,也可以写具体版本号,这样输出结果是可以提交的)
 ```
 
-
-##SVN 常用命令一览表
-
+## SVN 常用命令一览表
  
 
 | **命令**                                   | **功能**                                   | **使用格式**                                 |

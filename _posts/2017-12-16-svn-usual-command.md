@@ -9,7 +9,7 @@ categories:  svn
 * content
 {:toc}
 
-
+## 常用命令
 ###  将文件checkout到本地目录
 ```
   svn checkout path（path是服务器上的目录）
@@ -22,6 +22,10 @@ categories:  svn
   例如：svn add test.php(添加test.php)
   svn add *.php(添加当前目录下所有的php文件)
 ```
+
+
+
+
 ###  将改动的文件提交到版本库
 ```
   svn commit -m "LogMessage" [-N] [--no-unlock] PATH(如果选择了保持锁，就使用--no-unlock开关)
@@ -131,6 +135,7 @@ categories:  svn
 ```
   svn cat 目标[@版本]...如果指定了版本，将从指定的版本开始查找。
   svn cat -r PREV filename > filename (PREV 是上一版本,也可以写具体版本号,这样输出结果是可以提交的)
+<<<<<<< HEAD
   ```
 ## svn常用命令一栏变
 
@@ -138,3 +143,51 @@ categories:  svn
 [svn常用命令一栏变](http://blog.sina.com.cn/s/blog_567e650201012jmq.html)
 [Subversion Commands and Scripts](http://www.yolinux.com/TUTORIALS/Subversion.html)
 
+=======
+```
+
+## SVN 常用命令一览表
+ 
+
+| **命令**                                   | **功能**                                   | **使用格式**                                 |
+| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| **checkout**                             | 检出                                       | **svn  co  URL**                         |
+| **up**                                   | 更新到当前URL的末端                              | **svn  up**                              |
+|                                          |                                          |                                          |
+| **switch**                               | 更新到某一tag/branch                          | **svn  switch  (tag/分支)URL**             |
+| **add**                                  | 增加                                       | **svn  add  文件名**                        |
+|                                          |                                          |                                          |
+| **rm**                                   | 删除文件                                     | **svn  rm 文件名**                          |
+| 删除目录                                     | **svn  rm 目录名**                          |                                          |
+| **diff**                                 | 与base版本（最后检出或者更新到的版本）对比                  | **svn  diff**                            |
+| 与版本库中最新版本对比                              | **svn  diff  -r  head**                  |                                          |
+| 当前工作副本，两个版本之间对比                          | **svn  diff  -r  reversion1:reversion2** |                                          |
+| 版本库中任意两个tag做对比                           | **svn   diff    (tag1)URL    (tag2)URL** |                                          |
+| **ci**                                   | 提交                                       | **svn ci -m "commit log"**               |
+| **log**                                  | 查看当前工作副本log                              | **svn  log**                             |
+|                                          |                                          |                                          |
+| 只查看指定版本的log                              | **svn  log  -r**                         |                                          |
+| 打印log所有附加信息                              | **svn  log  -v**                         |                                          |
+| 查看当前tag/branch版本详情                       | **svn  log --stop-on-copy -v**           |                                          |
+| **info**                                 | 查看当前工作副本所在URL                            | **svn  info**                            |
+| **status**                               | 查看工作副本的状态                                | **svn st**                               |
+| 查看文件的taglist                             | **svn命令不支持，可执行cs taglist**               |                                          |
+| **tag**                                  | 新增tag                                    | **svn cp . （tag）URL**                    |
+|                                          |                                          |                                          |
+| 删除tag                                    | **svn rm （tag）URL -m "commit log"**      |                                          |
+| 覆盖已经存在的tag                               | **不支持**                                  |                                          |
+| **分支开发**                                 | 创建branch                                 | **svn  cp  （基线版本）URL （分支）URL  -m "commit log"** |
+| 删除branch                                 | **svn rm （分支）URL   -m "commit log"**     |                                          |
+| 同步                                       | **svn co （主干）URL**                       |                                          |
+| **cd ~/wc**                              |                                          |                                          |
+| **svn merge （主干）URL （待同步tag）URL**        |                                          |                                          |
+| **svn ci -m "commit log"**               |                                          |                                          |
+| **svn cp （主干）URL （以_PD_BL_MAIN结尾的tag）URL -m"commit log"** |                                          |                                          |
+| 合并                                       | **svn co （合并目标）URL**                     |                                          |
+| **cd ~/wc**                              |                                          |                                          |
+| **svn merge （基线版本tag）URL  （上线tag）URL**   |                                          |                                          |
+| **svn ci -m "commit log"**               |                                          |                                          |
+| **svn cp （合并目标）URL （上线tag_MERGE_的tag对应）URL -m"commit log"** |                                          |                                          |
+
+[SVN 常用命令一览表](http://blog.sina.com.cn/s/blog_567e650201012jmq.html)
+>>>>>>> dc7ee90c5f177486373e9871652bfb61e1d29d11

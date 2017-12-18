@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在Centos6.8环境下搭建svn服务器
+title: 在Centos6.8环境下搭建svn服务
 categories: svn
 tags: svn
 ---

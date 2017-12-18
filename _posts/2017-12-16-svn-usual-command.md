@@ -135,15 +135,6 @@ categories:  svn
 ```
   svn cat 目标[@版本]...如果指定了版本，将从指定的版本开始查找。
   svn cat -r PREV filename > filename (PREV 是上一版本,也可以写具体版本号,这样输出结果是可以提交的)
-<<<<<<< HEAD
-  ```
-## svn常用命令一栏变
-
-## 参考资料
-[svn常用命令一栏变](http://blog.sina.com.cn/s/blog_567e650201012jmq.html)
-[Subversion Commands and Scripts](http://www.yolinux.com/TUTORIALS/Subversion.html)
-
-=======
 ```
 
 ## SVN 常用命令一览表
@@ -189,5 +180,8 @@ categories:  svn
 | **svn ci -m "commit log"**               |                                          |                                          |
 | **svn cp （合并目标）URL （上线tag_MERGE_的tag对应）URL -m"commit log"** |                                          |                                          |
 
+## 参考资料
+
 [SVN 常用命令一览表](http://blog.sina.com.cn/s/blog_567e650201012jmq.html)
->>>>>>> dc7ee90c5f177486373e9871652bfb61e1d29d11
+[Subversion Commands and Scripts](http://www.yolinux.com/TUTORIALS/Subversion.html)
+

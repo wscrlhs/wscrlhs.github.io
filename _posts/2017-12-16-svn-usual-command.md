@@ -9,7 +9,7 @@ categories:  svn
 * content
 {:toc}
 
-## 常用命令
+# 常用命令
 ###  将文件checkout到本地目录
 ```
   svn checkout path（path是服务器上的目录）
@@ -92,7 +92,7 @@ categories:  svn
   svn help ci
 ```
 
-## 以上是常用命令，下面写几个不经常用的
+# 以上是常用命令，下面写几个不经常用的
 ###  版本库下的文件和目录列表
 ```
   svn list path

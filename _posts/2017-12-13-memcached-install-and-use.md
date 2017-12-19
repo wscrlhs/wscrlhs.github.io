@@ -144,7 +144,7 @@ STORED
 输出信息说明：
 
 - **STORED**：保存成功后输出。
-- **NOT_STORED **：在保持失败后输出。
+- **NOT_STORED**：在保持失败后输出。
 
 ## 查找命令
 ### get命令
@@ -156,15 +156,16 @@ get key
 ### gets命令
 
 Memcached gets 命令获取带有 CAS 令牌存 的 value(数据值) ，如果 key 不存在，则返回空。
+gets 命令的基本语法格式如下：
 ```
-#gets 命令的基本语法格式如下：
 gets key
-#多个 key 使用空格隔开，如下:
+```
+多个 key 使用空格隔开，如下:
+```
 gets key1 key2 key3
 ```
 ## 删除命令
 ### delete命令
-
 Memcached delete 命令用于删除已存在的 key(键)。
 ```
 delete key [noreply]
@@ -172,3 +173,12 @@ delete key [noreply]
 参数说明如下：
 - key：键值 key-value 结构中的 key，用于查找缓存值。
 - noreply（可选）： 该参数告知服务器不需要返回数据
+
+## 高级
+### Memcache 查看列出所有key方法
+```
+stats items          // 列出所有keys
+stats cachedump 7 0  // 通过itemid获取key
+//列出的items id，本例中为7，第2个参数为列出的长度，0为全部列出
+get key             //通过get获取key值
+```

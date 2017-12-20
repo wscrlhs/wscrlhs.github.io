@@ -9,6 +9,7 @@ tags:  PHPUnit PhpStrom
 {:toc}
 
 ## 环境
+![](/assets/images/20171214001.jpg)
 PhpStrom 2017.2.2
 
 PHP 5.6.31

@@ -5,17 +5,15 @@ categories: mac
 tags: mac 
 ---
 
- content
+content
 {:toc}
 
 ## 开关机  
 ### 注销
-
    - opt+shift+cmd+q
 
 ## 键盘   
 ### cmd键  
-
    - 全选 cmd+a
    - 复制 cmd+c
    - 粘贴 cmd+v
@@ -24,8 +22,6 @@ tags: mac
    - 保存 cmd+s
    - 撤销 cmd+z
    - 查找 cmd+f
-
-
 
 
 
@@ -79,27 +75,3 @@ tags: mac
 	 - 路径栏 opt+cmd+p
 	 - 状态栏 cmd+/
 	 - 边栏 opt+cmd+s
-	 - 工具栏 opt+cmd+t
- 	 - 预览 shift+cmd+p  
-
-###  文件操作  
-
-	 - 复制文件／文件夹 cmd+d
-	 - 创建替身（快捷方式） cmd+l
-	 - 通过替身文件找到原文件 cmd+r
-	 - 通过输入前往文件夹 shift+cmd+g
-
-###  删除文件  
-
-	 - cmd+delete
-
-###  隐藏文件和文件夹
-
- 	 - 隐藏 chflags hidden 文件路径
-	 - 取消 chflags nohidden 文件路径
-## 搜索
-### spotlight
-
-	- opt+cmd+空格
-## emoji
-	- ctl+cmd+空格

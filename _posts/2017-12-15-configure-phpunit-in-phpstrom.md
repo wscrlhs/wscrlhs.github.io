@@ -9,7 +9,6 @@ tags:  PHPUnit PhpStrom
 {:toc}
 
 ## 环境
-![](/assets/images/20171214001.jpg)
 PhpStrom 2017.2.2
 
 PHP 5.6.31
@@ -17,7 +16,7 @@ PHP 5.6.31
 ## 下载phpunit.phar依赖库
 根据PHP版本下载相应的PHPUnit档案包phpunit.phar
 
-![](http://ww1.sinaimg.cn/mw690/73f02bfcgy1fmhp13boh4j20yk06zmxn.jpg)
+![](/assets/images/20171215001.png)
 
 下载地址:
 [https://phar.phpunit.de/](https://phar.phpunit.de/)
@@ -28,16 +27,16 @@ PHP 5.6.31
 ## 配置phpunit
 File->Default Settings->Languages & Frameworks->PHP->Test Frameworks,点击+添加
 
-![](http://ww1.sinaimg.cn/large/73f02bfcgy1fmhpez0ipyj20st0jldht.jpg)
+![](/assets/images/20171215002.png)
 
 ## 添加依赖库
 项目下External Libraries右键选择Configure PHP Include Paths...
 
-![](http://ww1.sinaimg.cn/large/73f02bfcgy1fmhpl0lngkj20an06swef.jpg)
+![](/assets/images/20171215003.png)
 
 选择你刚才下载的phpunit.phar
 
-![](http://ww1.sinaimg.cn/large/73f02bfcgy1fmhpndwnl8j20ew0k7gmq.jpg)
+![](/assets/images/20171215004.png)
 
 ## 编写测试用例
 - Code

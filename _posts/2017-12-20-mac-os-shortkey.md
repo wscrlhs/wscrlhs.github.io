@@ -45,33 +45,33 @@ tags: mac
 
 ## finder窗口  
 ###  窗口  
-	 - 打开find 在桌面按cmd+n
-	 - 向边栏中添加快捷键 选中文件，按cmd+ctl+t
+ - 打开find 在桌面按cmd+n
+ - 向边栏中添加快捷键 选中文件，按cmd+ctl+t
 
 ##  标题栏显示路径  
 
 ```
-	显示 defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE;killall Finder
-	关闭 defaults delete com.apple.finder _FXShowPosixPathInTitle;killall Finder
+显示 defaults write com.apple.finder _FXShowPosixPathInTitle -bool TRUE;killall Finder
+关闭 defaults delete com.apple.finder _FXShowPosixPathInTitle;killall Finder
 ```
 
 ###  新建标签  
 
-	-  cmd+t
+-  cmd+t
 
 ###  右侧面板  
 
-	 - 图标 cmd+1
-	 - 列表 cmd+2
-	 - 分栏 cmd+3
-	 - Cower Flow cmd+4
+ - 图标 cmd+1
+ - 列表 cmd+2
+ - 分栏 cmd+3
+ - Cower Flow cmd+4
 
 ###  查看显示选项  
 
-	 - cmd+j
+ - cmd+j
 
 ###  显示／隐藏  
 
-	 - 路径栏 opt+cmd+p
-	 - 状态栏 cmd+/
-	 - 边栏 opt+cmd+s
+ - 路径栏 opt+cmd+p
+ - 状态栏 cmd+/
+ - 边栏 opt+cmd+s

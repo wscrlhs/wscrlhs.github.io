@@ -18,13 +18,16 @@ tags: Xampp
 127.0.0.1 www.myproject.com
 ```
 
+
+
+
 ## Apache 中添加多域名支持
 
 - 找到`xampp/apache/conf/extra/httpd-vhosts.conf `文件，打开编辑
 - 去掉注释符号 `# NameVirtualHost *:80 ;`
 - 文件末尾添加代码：
 
-```
+```bash
 <VirtualHost *:80>
     DocumentRoot "/xampp/htdocs"
     ServerName www.localhost.com
@@ -41,4 +44,6 @@ tags: Xampp
 ```
 
 ## 重启Xampp服务
-- 打开浏览器，输入www.localhost.com和www.myproject.com即可访问
+- 打开浏览器，输入www.localhost.com[^1]和www.myproject.com即可访问
+
+[^1]: 脚注1

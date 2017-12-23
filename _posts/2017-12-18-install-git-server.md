@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在Linux上搭建Git服务
-categories: git
+categories: 安装配置 git
 tags: git
 ---
 

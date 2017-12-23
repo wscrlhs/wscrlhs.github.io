@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Xampp 多站点配置
-categories:  Xampp
+categories: 安装配置 
 tags: Xampp
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Memcached的安装和使用
-categories: memcached
+categories: 语言学习
 tags: memcached
 ---
 

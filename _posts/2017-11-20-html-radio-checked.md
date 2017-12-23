@@ -1,7 +1,7 @@
 ---
 layout: post
 title: thinkphp radio标签保持选中状态 
-categories: [thinkphp]
+categories: 语言学习
 tags: thinkphp radio
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  在PhpStrom中配置使用PHPUnit
-categories:  PHPUnit PhpStrom
+categories:  安装配置
 tags:  PHPUnit PhpStrom
 ---
 

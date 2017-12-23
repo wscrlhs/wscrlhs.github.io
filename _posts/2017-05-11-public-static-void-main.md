@@ -1,6 +1,6 @@
 ---
 layout: post
-title: public static void main 
+title: public static void main
 categories: java
 tags: java
 ---

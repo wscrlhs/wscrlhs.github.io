@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intellij Idea Debug使用略述(Mac)
-categories: [Intellij Idea,mac]
+categories: 工具使用 idea
 tags: Idea mac
 ---
 
@@ -19,6 +19,3 @@ tags: Idea mac
 8. View Breakpoints(shift_+cmd+F8) 查看程序所有的断点
 9. Force Step Into(shift+option+F7) 能进入任何方法
 10. Resume program(shift+command+F8) 移动到下一个断点
-
-
-

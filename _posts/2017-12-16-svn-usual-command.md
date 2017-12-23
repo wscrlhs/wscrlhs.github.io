@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  SVN常用命令
-categories:  svn
-<!-- tags:  svn -->
+categories: 工具使用 svn
+tags:  svn 
 ---
 
 
@@ -138,7 +138,7 @@ categories:  svn
 ```
 
 ## SVN 常用命令一览表
- 
+
 
 | **命令**                                   | **功能**                                   | **使用格式**                                 |
 | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
@@ -184,4 +184,3 @@ categories:  svn
 
 [SVN 常用命令一览表](http://blog.sina.com.cn/s/blog_567e650201012jmq.html)
 [Subversion Commands and Scripts](http://www.yolinux.com/TUTORIALS/Subversion.html)
-

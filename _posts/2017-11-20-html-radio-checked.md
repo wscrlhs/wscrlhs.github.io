@@ -1,7 +1,7 @@
 ---
 layout: post
-title: thinkphp radio标签保持选中状态 
-categories: 语言学习
+title: thinkphp radio标签保持选中状态
+categories: 语言学习 html
 tags: thinkphp radio
 ---
 
@@ -54,4 +54,3 @@ $("input:radio[name='status']").eq({:I('status')}).attr("checked",true);
 <input type="radio" name="status" value="1" <?php if(I('status')==2):?> checked="checked"<?php endif;?>>
 <input type="radio" name="status" value="2" <?php if(I('status')==1):?> checked="checked"<?php endif;?>>
 ```
-

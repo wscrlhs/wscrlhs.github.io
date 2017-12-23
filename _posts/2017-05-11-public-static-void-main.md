@@ -1,7 +1,7 @@
 ---
 layout: post
 title: public static void main
-categories: java
+categories: 语言学习 java
 tags: java
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  mac os x 快捷键
-categories: 工具使用
-tags: mac 
+categories: 工具使用 mac
+tags: mac
 ---
 
 * content

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python基础之数据结构
-categories: Python
+categories: 语言学习 Python
 tags: Python
 ---
 

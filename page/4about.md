@@ -9,7 +9,7 @@ type: page
 * content
 {:toc}
 
-<iframe src="https://github-profile-summary.com/user/wscrlhs" width="700px" height="500px" frameborder="0" scrolling="no"> </iframe>
+<iframe src="https://github-profile-summary.com/user/wscrlhs" frameborder="0" scrolling="no"> </iframe>
 
 ## Comments
 

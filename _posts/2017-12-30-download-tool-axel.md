@@ -21,7 +21,7 @@ It can use multiple mirrors for a download. Axel has no dependencies and is ligh
 
 ### Debian/Ubuntu安装
 >
-`apt-get install axel`
+apt-get install axel
 
 ### CentOS安装
 目前yum源上没有Axel，可以到http://pkgs.repoforge.org/axel/下载rpm包安装。
@@ -44,9 +44,9 @@ rpm -ivh axel-2.4-1.el5.rf.x86_64.rpm
 假设已知多个来源，分别为url1，url2 等
 
 > 
-`axel [options] url1 [url2] [url...]`
+axel [options] url1 [url2] [url...]
 
-###options(可选参数)
+### options(可选参数)
 >
 --max-speed=x , -s x         最高速度x  
 --num-connections=x , -n x   连接数x  

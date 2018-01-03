@@ -37,9 +37,8 @@ yum -y install nginx
 赋予权限  
 `chown -R nginx:nginx html/`
 ### 配置nginx
-- 打开文件/etc/nginx/conf.d/default.conf 
+- 打开文件/etc/nginx/conf.d/default.conf
 - 定义server容器
-
 ```bash
 [...]
     server {
@@ -68,7 +67,7 @@ yum -y install nginx
     }
 [...]
 ```
-- 检查配置文件语法
+- 检查配置文件语法  
 `nginx -t`
 
 ## 安装php-fpm

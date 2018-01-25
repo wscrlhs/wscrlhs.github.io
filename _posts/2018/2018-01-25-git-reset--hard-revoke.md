@@ -24,5 +24,5 @@ tags:  git
 3. `git status`  
 ![](/assets/images/20180125003.png)
 
-4. `git checkout app.js ../express-generator/app.js`  
+4. `git checkout app.js`    
 ![](/assets/images/20180125004.png)

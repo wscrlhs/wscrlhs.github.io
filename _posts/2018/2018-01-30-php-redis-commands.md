@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PHP-Redis方法[转载]
+title:  PHP-Redis方法大全
 categories:  redis
 tags: redis 
 ---

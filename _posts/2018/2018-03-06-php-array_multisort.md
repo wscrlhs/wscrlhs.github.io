@@ -6,7 +6,7 @@ tags:  php
 ---
 
 * content
-    {:toc}
+{:toc}
 
 ## 定义和用法  
 array_multisort()可以用来一次对多个数组进行排序，或者根据某一维或多维对多维数组进行排序。 

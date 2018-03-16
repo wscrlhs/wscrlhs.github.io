@@ -57,6 +57,16 @@ ealm =  /data/svn/repositories //认证空间名，版本库所在目录
 svnserve -d -r /data/svn/repositories/      //启动svn，注意目录，不包括mysvn
 ps aux | grep svnserve      //查看启动情况
 ```
+## 克隆
+- 本地克隆
+```
+svn checkout svn://ip:/mysvn
+```
+- 远程克隆
+```
+svn checkout svn://localhost:/mysvn
+```
+
 ## 遇到的问题
 1. 在阿里云安装svn，客户端无法访问
 

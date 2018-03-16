@@ -29,6 +29,7 @@ apt-get install git # ubuntu
 
 ### 配置服务器
 ```
+su
 cd /home/git
 mkdir .ssh && chmod 700 .ssh
 touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
@@ -61,6 +62,11 @@ git clone /home/gitrepo/project.git
 ```
 git clone git@ip:/home/gitrepo/project.git
 ```
+- 第一次提交
+```
+git push -u origin master
+```
+
 ### 禁止开发者用户以系统用户 git 的身份登录服务器
 ```
 cat /etc/shells   # see if `git-shell` is already in there.  If not...

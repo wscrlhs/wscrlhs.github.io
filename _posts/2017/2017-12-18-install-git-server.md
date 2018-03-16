@@ -29,8 +29,7 @@ apt-get install git # ubuntu
 
 ### 配置服务器
 ```
-su git #切换到 git 用户  
-cd
+cd /home/git
 mkdir .ssh && chmod 700 .ssh
 touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
 ```
@@ -42,8 +41,7 @@ cat ~/.ssh/id_rsa.pub  #在客户端执行
 
 ### 创建一个目录
 ```
-su git #切换到 git 用户  
-cd     #切换到 home 目录  
+cd /home    #切换到 home 目录
 mkdir gitrepo #新建目录
 chown -R git:git /home/gitrepo
 chmod 755 /home/gitrepo
@@ -51,10 +49,17 @@ chmod 755 /home/gitrepo
 
 ### 初始化一个 git 仓库
 ```
-cd gitrepo
-mkdir project.git
-cd project.git
-git init --bare
+cd /home/gitrepo
+git init --bare  project.git
+```
+### 克隆
+- 本地克隆
+```
+git clone /home/gitrepo/project.git
+```
+- 远程克隆
+```
+git clone git@ip:/home/gitrepo/project.git
 ```
 ### 禁止开发者用户以系统用户 git 的身份登录服务器
 ```

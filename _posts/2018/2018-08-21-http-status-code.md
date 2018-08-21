@@ -3,7 +3,7 @@ layout: post
 title: HTTP返回状态码  
 categories: [http]  
 tags:  
-  - **http**   
+  - http  
 ---  
   
 ## HTTP 超文本传输协议  

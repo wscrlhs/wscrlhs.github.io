@@ -6,6 +6,10 @@ tags:
   - http  
 ---  
   
+  * content
+  {:toc}
+
+
 ## HTTP 超文本传输协议  
 HTTP 是基于客户端/服务端（C/S）的架构模型，通过一个可靠的链接来交换信息，是一个无状态的请求/响应协议。  
   
@@ -17,11 +21,11 @@ HTTP 请求到服务器的请求消息包括以下格式：请求行（request l
   
 HTTP1.0 定义了三种请求方法： GET, POST 和 HEAD方法。  
 HTTP1.1 新增了五种请求方法：OPTIONS, PUT, DELETE, TRACE 和 CONNECT 方法。  
-  
-  
-  
-  
-  
+
+
+
+
+
 ## HTTP 请求方式  
 GET       请求指定的页面信息，并返回实体主体。  
 HEAD    类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头  

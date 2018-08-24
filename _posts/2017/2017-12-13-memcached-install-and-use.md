@@ -35,6 +35,38 @@ Memcached简洁而强大。它的简洁设计便于快速开发，减轻开发�
 * memcached 停止
   `service memcached stop`
 
+## Mac下安装memcached
+* brew 安装
+  `brew install memcached`
+* 启动停止命令
+  ```
+  brew services start memcached
+
+  brew services stop memcached
+
+  ```
+* 安装客户端
+  `brew install libmemcached`
+
+* 安装telnet
+  `brew install telnet`
+  启动memcached 命令参数如下
+
+
+## memcached  启动服务器
+
+  `memcached -p 11211 -m 64m -d -vv`
+>	-p 监听的端口
+>	-l 连接的ip地址，默认是本机
+>	-d start 启动memcached服务
+>	-d stop|shutdown 关闭和正在运行的memcached服务
+>	-d install 安装memcached服务
+>	-u 以root身份运行
+>	-m 最大内存的实用， 单位MB
+>	-c 最大同时连接数
+>	-h 显示帮助
+
+
 ## Memcached连接
 > **telnet HOST PORT**
 

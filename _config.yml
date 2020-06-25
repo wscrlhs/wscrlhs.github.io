@@ -16,7 +16,11 @@ postshare_enabled : false
 # Build settings
 permalink   : /:year/:title/
 markdown    : kramdown
-highlighter : rouge
+#highlighter : rouge
+  
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 source      : ./
 destination : ./_site

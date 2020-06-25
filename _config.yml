@@ -1,60 +1,63 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: 夙兴夜寐
-brief-intro: Software Engineer
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://wscrlhs.github.io" # the base hostname & protocol for your site
+title_left    : "Think"
+title_right   : "space" # default: ""
+description   : "Minimalist Jekyll theme for technical writing blog."
+keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
+url           : https://heiswayi.github.io/thinkspace # site url
+baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover         : "" # image uri like logo/cover image for site seo
 
-permalink: /:year/:month/:day/:title/
-
-# other links
-twitter_username: #gaohaoyang126
-facebook_username: #gaohaoyang.water
-github_username:  wscrlhs
-email: wscrlhs@gmail.com
-weibo_username: #3115521wh
-zhihu_username: #gaohaoyang
-linkedIn_username: #gaohaoyang
-dribbble_username:
-
-description_footer: 本站记录我软件开发学习之旅！
-
-# comments
-# two ways to comment, only choose one, and use your own short name
-# 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #hygblog
-disqus_shortname: wscrlhs
-
-# statistic analysis 统计代码
-# 百度统计 id，将统计代码替换为自己的百度统计id，即
-# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
-# xxxxx字符串
-baidu_tongji_id: f7f3cec83288773eed040db6eb0dd64f
-google_analytics_id:  UA-98623479-1 # google 分析追踪id
+google_analytics  : UA-XXXXX-XX
+twitter_username  : ""
+comments_enabled  : false # if enabled (set to true), please provide your disqus_username
+disqus_shortname  : ""
+postshare_enabled : false
 
 # Build settings
-markdown: kramdown
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+source      : ./
+destination : ./_site
 
-# port
-# port: 1234
+# Sass configuration
+sass:
+  sass_dir  : assets/scss
+  style     : compressed # expanded
 
-# url
-category_dir: category/
-tag_dir: tag/
+# Author settings
+author:
+  name     : "John Doe"
 
-# excerpt
-excerpt_separator: "\n\n\n\n"
+plugins:
+  - jekyll-sitemap
+  - bourbon
+  - jekyll-paginate
 
-# paginate
-gems: [jekyll-paginate]
-paginate: 6
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude:
+  - "gulp"
+  - "node_modules"
+  - "bower"
+  - "bower_components"
+  - "config.rb"
+  - "src"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - ".rvmrc"
+  - ".rbenv-version"
+  - "package.json"
+  - "gulpfile.js"
+  - "README.md"
+  - "Rakefile"
+  - "changelog.md"
+  - "script"
+  - "vendor"
+  - "thinkspace.gemspec"
